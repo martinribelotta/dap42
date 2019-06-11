@@ -48,7 +48,7 @@ DAP42CIAA7.bin: | $(BUILD_DIR)
 	@printf "  BUILD $(@)\n"
 	$(Q)$(MAKE) TARGET=DAP42CIAA7 -C src/ clean
 	$(Q)$(MAKE) TARGET=DAP42CIAA7 -C src/
-	$(Q)cp src/DAP42CIAA7.bin $(BUILD_DIR)/$(@)
+	$(Q)cp src/DAP42.bin $(BUILD_DIR)/$(@)
 
 DAP42DC.bin: | $(BUILD_DIR)
 	@printf "  BUILD $(@)\n"
