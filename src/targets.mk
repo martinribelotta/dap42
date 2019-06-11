@@ -26,6 +26,12 @@ ifeq ($(TARGET),DAP42)
 	LDSCRIPT           ?= ./stm32f042/stm32f042x6.ld
 	ARCH                = STM32F0
 endif
+ifeq ($(TARGET),DAP42CIAA7)
+	TARGET_COMMON_DIR  := ./stm32f042
+	TARGET_SPEC_DIR    := ./stm32f042/dap42ciaa7
+	LDSCRIPT           ?= ./stm32f042/stm32f042x6.ld
+	ARCH                = STM32F0
+endif
 ifeq ($(TARGET),BRAINV3.3)
 	TARGET_COMMON_DIR  := ./stm32f042
 	TARGET_SPEC_DIR    := ./stm32f042/brain3.3
